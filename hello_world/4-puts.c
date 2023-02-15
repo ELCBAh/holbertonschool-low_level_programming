@@ -13,6 +13,6 @@ int main(void)
 	/* Outputs to stout */
 	char *str = "Programming is like building a multilingual puzzle\n";
 
-	puts(str);
+	int puts(const char* str);
 	return (0);
 }
