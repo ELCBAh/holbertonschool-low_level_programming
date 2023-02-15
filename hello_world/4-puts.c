@@ -1,6 +1,12 @@
 #include <stdio.h>
 
-/* Initialize code */
+/**
+ * main - Entry point
+ *
+ * Description: 'run program'
+ *
+ * Return: Always 0 (Success)
+ * */
 
 int main(void)
 {
