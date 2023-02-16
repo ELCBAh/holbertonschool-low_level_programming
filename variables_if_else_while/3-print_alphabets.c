@@ -9,7 +9,7 @@ int main(void)
 	char *abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
 	int count;
 
-	for (count = 0; count < 54; count++)
+	for (count = 0; count < 53; count++)
 		putchar(abc[count]);
 	return (0);
 }
