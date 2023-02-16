@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char *abc = "abcdfghijklmnoprstuvwxyz";
+	char *abc = "abcdfghijklmnoprstuvwxyz\n";
 	int count;
 
 	for (count = 0; count < 25; count++)
