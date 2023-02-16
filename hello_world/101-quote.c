@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char *textVar="and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	fprintf(stderr,"%s",textVar);
+	char *textVar = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	fprintf(stderr , "%s" , textVar);
 	return (1);
 }
