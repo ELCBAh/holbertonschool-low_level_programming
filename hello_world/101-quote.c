@@ -1,9 +1,7 @@
 #include <stdio.h>
 /**
  * main - initializes program
- *
  * Description: prints message directly to strerr
- *
  * Return: 1 (Success)
  */
 int main(void)
