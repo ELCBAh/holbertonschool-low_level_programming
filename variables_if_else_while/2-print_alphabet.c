@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
- * */
+ * main - initializes code
+ * Description: putschar from a string
+ * Return: every single char*/
 int main(void)
 {
 	char *abc = "abcdefghijklmnopqrstuvwxyz\n";
