@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	char *abc = "abcdfghijklmnoqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
+	char *abc = "abcdfghijklmnoqrstuvwxyz\n";
 	int count;
 
-	for (count = 0; count < 51; count++)
+	for (count = 0; count < 25; count++)
 		putchar(abc[count]);
 	return (0);
 }
