@@ -9,7 +9,7 @@ int main(void)
 	char *base10 = "0123456789abcdef\n";
 	int count;
 
-	for (count = 0; count < 11; count++)
+	for (count = 0; count < 18; count++)
 		putchar(base10[count]);
 	return (0);
 }
