@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <ctype.h>
 #include "3-main.h"
 /**
  * _islower - initializes funct
