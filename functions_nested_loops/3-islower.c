@@ -10,7 +10,7 @@
  * Description: checks for lowercase
  * Return: data
  */
-void _islower(int c)
+int _islower(int c)
 {
 	if(islower(c))
 		return (1);
