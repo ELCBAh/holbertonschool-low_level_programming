@@ -5,13 +5,13 @@
  * Description: Prints abc 10x
  * Return: 0
  */
-void print_alphabet(void)
+void print_alphabetx10(void)
 {
 	int count = 0;
 
 	for (count = 0; count < 11; count++)
 	{
-		print_alphabet();
+		print_alphabetx10();
 		{
 			printf("abcdefghijklmnopqrstuvwxyz\n");
 		}
