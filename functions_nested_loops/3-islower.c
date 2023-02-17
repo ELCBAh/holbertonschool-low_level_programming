@@ -12,5 +12,7 @@
  */
 void _islower(int c)
 {
-	islower(c);
+	if(islower(c))
+		return (1);
+	return (0);
 }
