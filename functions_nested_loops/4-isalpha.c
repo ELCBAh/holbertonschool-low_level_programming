@@ -8,7 +8,7 @@
 int _isalpha(int c)
 {
 	if (isalpha(c))
-		int _islower(int c)
+		_islower(int c)
 		{
 			if (islower(c))
 				return (1);
