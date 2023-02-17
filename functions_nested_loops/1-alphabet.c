@@ -8,5 +8,8 @@
 int main(void)
 {
 	print_alphabet();
+	{
+		printf("abcdefghijklmnopqrstuvwxyz\n");
+	}
 	return (0);
 }
