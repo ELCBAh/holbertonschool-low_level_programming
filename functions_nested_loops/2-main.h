@@ -1,3 +1,3 @@
 #include <stdio.h>
 /*char *abc = "abcdefghijklmnopqrstuvwxyz\n";*/
-void print_alphabetx10();
+void print_alphabet_x10();
