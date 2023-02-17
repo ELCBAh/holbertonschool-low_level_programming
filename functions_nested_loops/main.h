@@ -1,1 +1,3 @@
-void print_alphabet(void);
+#include <stdio.h>
+/*char *abc = "abcdefghijklmnopqrstuvwxyz\n";*/
+void print_alphabet();
