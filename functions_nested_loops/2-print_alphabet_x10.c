@@ -7,10 +7,13 @@
  */
 void print_alphabetx10(void)
 {
-	int count = ();
+	int count = 0;
 
 	for (count = 0; count < 11; count++)
 	{
-		printf("abcdefghijklmnopqrstuvwxyz\n");
+		print_alphabetx10();
+		{
+			printf("abcdefghijklmnopqrstuvwxyz\n");
+		}
 	}
 }
