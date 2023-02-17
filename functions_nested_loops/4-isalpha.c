@@ -8,6 +8,8 @@
 int _isalpha(int c)
 {
 	if (isalpha(c))
-		_islower(c);
+		_islower(c)
+			if (islower(c))
+				return (1);
 	return (0);
 }
