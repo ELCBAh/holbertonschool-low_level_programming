@@ -1,5 +1,5 @@
 #include <ctype.h>
-#include "3-main.h"
+#include "main.h"
 /**
  * _islower - initializes funct
  * Description: Checks for lowercase characters
