@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include "2-main.h"
 /**
  * print_alphabet - prints previous code 10x times
  * Description: Prints abc 10x
