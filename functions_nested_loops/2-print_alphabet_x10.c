@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_alphabetx10 - prints previous code 10x times
+ * print_alphabet - prints previous code 10x times
  * Description: Prints abc 10x
  * Return: 0
  */
