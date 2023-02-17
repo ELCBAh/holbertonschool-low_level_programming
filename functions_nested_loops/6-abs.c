@@ -6,9 +6,10 @@
  * Return: number
  */
 /**
- * @int: value to convert to absolute
+ * @j: value to convert to absolute
  */
-int _abs(int)
+int _abs(int j)
 {
-	abs(int);
+	abs(int j);
+	return (0);
 }
