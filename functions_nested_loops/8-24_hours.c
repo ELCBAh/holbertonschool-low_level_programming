@@ -25,11 +25,11 @@ void jack_bauer(void)
 					int sm = m % 10;
 
 					m++;
-					putchar(fh + '0');
-					putchar(sh + '0');
+					putchar(fh);
+					putchar(sh);
 					putchar(':');
-					putchar(fm + '0');
-					putchar(sm + '0');
+					putchar(fm);
+					putchar(sm);
 					putchar('\n');
 				}
 			}
