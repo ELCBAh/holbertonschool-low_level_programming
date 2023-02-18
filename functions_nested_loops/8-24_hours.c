@@ -25,12 +25,12 @@ void jack_bauer(void)
 					int sm = m % 10;
 
 					m++;
-					putchar(fh);
-					putchar(sh);
-					putchar(':');
-					putchar(fm);
-					putchar(sm);
-					putchar('\n');
+					_putchar(fh + '0');
+					_putchar(sh + '0');
+					_putchar(':');
+					_putchar(fm + '0');
+					_putchar(sm + '0');
+					_putchar('\n');
 				}
 			}
 			while (m == 59 && h < 23)
