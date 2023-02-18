@@ -20,12 +20,12 @@ void jack_bauer(void)
 				if (m < 59)
 				{
 					m++;
-					_putchar(h / 10 + '0');
-					_putchar(h % 10 + '0');
-					_putchar(':');
-					_putchar(m / 10 + '0');
-					_putchar(m % 10 + '0');
-					_putchar('\n');
+					putchar(h / 10 + '0');
+					putchar(h % 10 + '0');
+					putchar(':');
+					putchar(m / 10 + '0');
+					putchar(m % 10 + '0');
+					putchar('\n');
 				}
 			}
 			while (m == 59 && h < 23)
