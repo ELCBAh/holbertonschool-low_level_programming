@@ -19,12 +19,17 @@ void jack_bauer(void)
 			{
 				if (m < 59)
 				{
+					int fh = h / 10;
+					int sh = h % 10;
+					int fm = m / 10;
+					int sm = m % 10;
+
 					m++;
-					putchar(h / 10);
-					putchar(h % 10);
+					putchar(fh + '0');
+					putchar(sh + '0');
 					putchar(':');
-					putchar(m / 10);
-					putchar(m % 10);
+					putchar(fm + '0');
+					putchar(sm + '0');
 					putchar('\n');
 				}
 			}
