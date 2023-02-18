@@ -20,11 +20,11 @@ void jack_bauer(void)
 				if (m < 59)
 				{
 					m++;
-					putchar(h + '0');
-					putchar(h % 10 + '0');
+					putchar(h / 10);
+					putchar(h % 10);
 					putchar(':');
-					putchar(m + '0');
-					putchar(m % 10 + '0');
+					putchar(m / 10);
+					putchar(m % 10);
 					putchar('\n');
 				}
 			}
