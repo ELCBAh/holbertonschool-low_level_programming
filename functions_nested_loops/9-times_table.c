@@ -28,7 +28,8 @@ void times_table(void)
 				_putchar(((r = n * i) % 10) + 48);
 				_putchar(',');
 				_putchar(' ');
-		}	}
+			}
+		}
 		_putchar('\n');
 	}
 }
