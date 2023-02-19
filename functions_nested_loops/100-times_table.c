@@ -14,11 +14,11 @@ void print_times_table(int n)
 	int c;
 	int r = 0;
 
-	if (n < 15 || n > 0)
+	if (n < 15 && n > 0)
 	{
-		for (c = 0; c < n; c++)
+		for (c = 0; c <= n; c++)
 		{
-			for (i = 0; i < n; i++)
+			for (i = 0; i <= n; i++)
 			{
 				if ((r * 2) <= 18)
 				{
@@ -26,13 +26,19 @@ void print_times_table(int n)
 					_putchar(',');
 					_putchar(' ');
 				}
-				else
+				else if (r <= 100)
 				{
 					_putchar(((r = c * i) / 10) + 48);
 					_putchar(((r = c * i) % 10) + 48);
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
+				}
+				else
+				{
+					_putchar((((r = c * i) / 100) % 10) + '0');
+					_putchar(((r = c * i) / 10) + '0');
+					_putchar(((r = c * i) % 10) + '0');
 				}
 			}
 			_putchar('\n');
