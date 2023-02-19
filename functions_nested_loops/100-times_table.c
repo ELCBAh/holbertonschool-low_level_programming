@@ -25,6 +25,8 @@ void print_times_table(int n)
 					_putchar((r = c * i) + 48);
 					_putchar(',');
 					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
 				}
 				else if (r <= 100)
 				{
@@ -39,11 +41,12 @@ void print_times_table(int n)
 					_putchar((((r = c * i) / 100) % 10) + '0');
 					_putchar(((r = c * i) / 10) + '0');
 					_putchar(((r = c * i) % 10) + '0');
+					_putchar(' ');
 				}
 			}
 			_putchar('\n');
 		}
 	}
-	else
-		_putchar('\n');
+	else if (n == 0)
+		_putchar('0');
 }
