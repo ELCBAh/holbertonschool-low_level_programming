@@ -15,7 +15,7 @@ void print_to_98(int n)
 		{
 			if (n < 10 && n > -10)
 				_putchar(n + '0');
-			else if (n >= 10 && <= -10)
+			else if (n >= 10 && n <= -10)
 			{
 				_putchar((n / 10) + '0');
 				_putchar((n % 10) + '0');
@@ -37,7 +37,7 @@ void print_to_98(int n)
 				_putchar((n / 10) + '0');
 				_putchar((n % 10) + '0');
 			}
-			else if (n >= 100 && <= -100)
+			else if (n >= 100 && n <= -100)
 			{
 				_putchar((n / 100) + '0');
 				_putchar((n / 10) + '0');
@@ -50,5 +50,11 @@ void print_to_98(int n)
 			}
 		}
 		n--;
+	}
+	else
+	{
+		_putchar('9');
+		_putchar('8');
+		_putchar('\n');
 	}
 }
