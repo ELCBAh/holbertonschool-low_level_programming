@@ -15,18 +15,18 @@ void times_table(void)
 	{
 		for (i = 0; i < 10; i++)
 		{
-			if (r <= 9)
+			if ((r * 2) <= 18)
 			{
 				_putchar((r = n * i) + 48);
 				_putchar(',');
 				_putchar(' ');
-				_putchar(' ');
 			}
-			if (r > 9)
+			else
 			{
 				_putchar(((r = n * i) / 10) + 48);
 				_putchar(((r = n * i) % 10) + 48);
 				_putchar(',');
+				_putchar(' ');
 				_putchar(' ');
 			}
 		}
