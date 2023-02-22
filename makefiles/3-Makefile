@@ -7,12 +7,13 @@ RM = rm -f
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-fclean:
-	$(RM) $(wildcard .*~)
-oclean:
-	$(RM) $(wildcard *.o)
 clean:
-	$(fclean)
-	$(RM) $(NAME)
+	$(RM) *.*~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+fclean:
+	clean oclean
+	
 re:
 	$(CC) $(SRC)
