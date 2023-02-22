@@ -1,4 +1,7 @@
-all: 0-Makefile
+all: school school.o
 
-0-Makefile: school.c main.c m.h
-	cc school.c main.c school -o school
+school: school.o main.o m.h
+	cc school.o main.o m.h -o school
+
+.o: school.c main.c
+	cc -c school.c main.c
