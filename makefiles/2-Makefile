@@ -1,12 +1,12 @@
-all:
+all: $(NAME) $(OBJ)
 
 CC = gcc
 SRC = main.c school.c
 OBJ = $(wildcard *.o)
 NAME = school
 
-all: $(OBJ)
+$(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-all: $(SRC)
+$(OBJ): $(SRC)
 	$(CC) $(SRC) -c
