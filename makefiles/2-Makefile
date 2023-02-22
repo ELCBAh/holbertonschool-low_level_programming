@@ -6,6 +6,6 @@ OBJ = $(wildcard *.o)
 NAME = school
 
 $(NAME): $(OBJ)
-	$(CC) $(OBJ) -o school
+	$(CC) $(OBJ) -o $(NAME)
 $(OBJ): $(SRC)
 	$(CC) -c $(SRC)
