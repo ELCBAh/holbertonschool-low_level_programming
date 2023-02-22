@@ -1,5 +1,3 @@
-all: $(NAME)
-
 CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.o=.c)
