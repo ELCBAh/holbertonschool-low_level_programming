@@ -1,4 +1,4 @@
 all: 0-Makefile
 
 0-Makefile: school.c main.c m.h
-	cc school.c main.c -o school
+	cc school.c main.c school -o school
