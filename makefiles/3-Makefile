@@ -5,7 +5,7 @@ OBJ = $(SRC:.o=.c)
 NAME = school
 RM = rm -f
 
-all: $(OBJ) oclean clean re fclean
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 fclean:
