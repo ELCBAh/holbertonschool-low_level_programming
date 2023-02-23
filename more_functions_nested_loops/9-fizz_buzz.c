@@ -21,16 +21,16 @@ void fizz_buzz(void)
 
 	for (i = 0; i < 100; i++)
 	{
-		if ((i / 3) == 0 || (i / 5) == 0) /* Check for mul of three and five */
+		if ((i % 3) == 0 || (i % 5) == 0) /* Check for mul of three and five */
 		{
-			if ((i / 3) == 0) /* filters mul of three */
+			if ((i % 3) == 0) /* filters mul of three */
 			{
 				putchar(70);
 				putchar(105); /** Fizz */
 				putchar(122);
 				putchar(122);
 			}
-			else if ((i / 5) == 0) /* filters mul of five */
+			else if ((i % 5) == 0) /* filters mul of five */
 			{
 				putchar(66);
 				putchar(117); /** Buzz */
