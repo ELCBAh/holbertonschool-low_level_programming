@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * fizz_buzz - Initializes prototype
  * Description: Prints fizz for m of three and buzz for m of five
- * Return:
+ * Return: empty
  */
 void fizz_buzz(void)
 {
