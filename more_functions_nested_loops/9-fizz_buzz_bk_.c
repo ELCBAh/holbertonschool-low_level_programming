@@ -13,6 +13,7 @@ int main(void)
 /**
  * fizz_buzz - Initializes prototype
  * Description: Prints fizz for m of three and buzz for m of five
+ * Return: empty
  */
 void fizz_buzz(void)
 {
@@ -22,17 +23,6 @@ void fizz_buzz(void)
 	{
 		if ((i % 3) == 0 || (i % 5) == 0) /* Check for mul of three and five */
 		{
-			if ((i % 3) == 0 && (i % 5) == 0)
-			{
-				putchar(70);
-				putchar(105); /** Fizz */
-				putchar(122);
-				putchar(122);
-				putchar(66);
-				putchar(117); /** Buzz */
-				putchar(122);
-				putchar(122);
-			}
 			if ((i % 3) == 0) /* filters mul of three */
 			{
 				putchar(70);
