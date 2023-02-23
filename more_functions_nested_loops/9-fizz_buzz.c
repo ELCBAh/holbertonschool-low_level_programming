@@ -19,7 +19,7 @@ void fizz_buzz(void)
 {
 	int i;
 
-	for (i = 0; i < 100; i++)
+	for (i = 1; i < 100; i++)
 	{
 		if ((i % 3) == 0 || (i % 5) == 0) /* Check for mul of three and five */
 		{
@@ -38,7 +38,7 @@ void fizz_buzz(void)
 				putchar(122);
 			}
 		}
-		else
+		if
 		{
 			if (i > 99)
 				putchar((i / 100) + '0');
@@ -47,5 +47,6 @@ void fizz_buzz(void)
 			else if (i < 10 && i > 0)
 				putchar((i % 10) + '0');
 		}
+		putchar(' ');
 	}
 }
