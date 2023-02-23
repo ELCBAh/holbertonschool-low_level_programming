@@ -15,27 +15,27 @@ void fizz_buzz(void)
 		{
 			if ((i / 3) == 0) /* filters mul of three */
 			{
-				_putchar(70);
-				_putchar(105); /** Fizz */
-				_putchar(122);
-				_putchar(122);
+				putchar(70);
+				putchar(105); /** Fizz */
+				putchar(122);
+				putchar(122);
 			}
 			else if ((i / 5) == 0) /* filters mul of five */
 			{
-				_putchar(66);
-				_putchar(117); /** Buzz */
-				_putchar(122);
-				_putchar(122);
+				putchar(66);
+				putchar(117); /** Buzz */
+				putchar(122);
+				putchar(122);
 			}
 		}
 		else
 		{
 			if (i > 99)
-				_putchar((i / 100) + '0');
+				putchar((i / 100) + '0');
 			if (i > 9)
-				_putchar((i / 10) + '0');
+				putchar((i / 10) + '0');
 			else if (i < 10 && i > 0)
-				_putchar((i % 10) + '0');
+				putchar((i % 10) + '0');
 		}
 	}
 }
