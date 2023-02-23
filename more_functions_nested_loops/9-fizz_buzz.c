@@ -41,12 +41,16 @@ void fizz_buzz(void)
 		else
 		{
 			if (i > 99)
+			{
 				putchar((i / 100) + '0');
 				putchar((i / 10) + '0');
 				putchar((i % 10) + '0');
+			}
 			if (i > 9)
+			{
 				putchar((i / 10) + '0');
 				putchar((i % 10) + '0');
+			}
 			else if (i < 10 && i > 0)
 				putchar((i % 10) + '0');
 		}
