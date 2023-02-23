@@ -40,5 +40,5 @@ void fizz_buzz(void)
 		else if (i < 10 && i > 0)
 			putchar((i % 10) + '0');
 	}
-	putchar(' ');
+		putchar(' ');
 }
