@@ -24,11 +24,8 @@ void fizz_buzz(void)
 			printf("FizzBuzz");
 		if ((i % 3) == 0) /* filters mul of three */
 			printf("Fizz");
-		else if ((i % 5) == 0) /* filters mul of five */
+		if ((i % 5) == 0) /* filters mul of five */
 			printf("Buzz");
-	}
-	else
-	{
 		if (i > 99)
 		{
 			putchar((i / 100) + '0');
