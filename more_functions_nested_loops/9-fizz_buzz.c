@@ -32,7 +32,7 @@ void fizz_buzz(void)
 		{
 			printf("Buzz");
 		}
-		}
+	}
 		else
 		{
 			if (i > 99)
@@ -50,5 +50,4 @@ void fizz_buzz(void)
 				putchar((i % 10) + '0');
 		}
 		putchar(' ');
-	}
 }
