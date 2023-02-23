@@ -1,6 +1,16 @@
 #include <stdio.h>
 #include "main.h"
 /**
+ * main - Initializes program
+ * Description: Runs fizz_buzz
+ * Return: 0
+ */
+int main(void)
+{
+	fizz_buzz();
+	return (0);
+}
+/**
  * fizz_buzz - Initializes prototype
  * Description: Prints fizz for m of three and buzz for m of five
  * Return: empty
