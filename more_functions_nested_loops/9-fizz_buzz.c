@@ -38,7 +38,7 @@ void fizz_buzz(void)
 				putchar(122);
 			}
 		}
-		if
+		else
 		{
 			if (i > 99)
 				putchar((i / 100) + '0');
