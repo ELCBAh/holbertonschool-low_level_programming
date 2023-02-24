@@ -18,40 +18,27 @@ void fizz_buzz(void)
 {
 	int i;
 
-	for (i = 1; i < 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
 		if ((i % 3) == 0 && (i % 5) == 0) /* filters mul of three and five */
 		{
 			printf("FizzBuzz");
 			putchar(' ');
 		}
-		if ((i % 3) == 0) /* filters mul of three */
+		else if ((i % 3) == 0) /* filters mul of three */
 		{
 			printf("Fizz");
 			putchar(' ');
 		}
-		if ((i % 5) == 0) /* filters mul of five */
+		else if ((i % 5) == 0) /* filters mul of five */
 		{
 			printf("Buzz");
 			putchar(' ');
 		}
+		else
+			printf("%d", i);
 		if (i > 99)
-		{
-			putchar((i / 100) + '0');
-			putchar((i / 10) + '0');
-			putchar((i % 10) + '0');
-			putchar(' ');
-		}
-		if (i > 9)
-		{
-			putchar((i / 10) + '0');
-			putchar((i % 10) + '0');
-			putchar(' ');
-		}
-		else if (i < 10 && i > 0)
-		{
-			putchar((i % 10) + '0');
-			putchar(' ');
-		}
+			continue;
 	}
+	printf("\n");
 }
