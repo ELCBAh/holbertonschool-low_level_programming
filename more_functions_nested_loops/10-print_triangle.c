@@ -8,7 +8,7 @@
 /**
  * @size: gets triangle size
  */
-void print_triangle(int size);
+void print_triangle(int size)
 {
 	int i;
 	int qsign;
