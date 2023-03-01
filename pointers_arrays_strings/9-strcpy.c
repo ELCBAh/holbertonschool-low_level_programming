@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <string.h>
 #include "main.h"
 /**
@@ -13,10 +14,13 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	int i = 0;
-	char tmp;
+	int tmp, i;
+	char len = strlen(src);
 
-	tmp = src[i];
-	dest[i] = tmp;
-	return (dest + '\0');
+	for (i = 0; i < len; i++)
+	{
+		tmp = src[i];
+		dest[i] = tmp;
+	}
+	return (dest);
 }
