@@ -13,14 +13,13 @@ void rev_string(char *s)
 {
 	int i;
 	int maxL = strlen(s) - 1;
-	char *p = &*s;
 	char cache;
 
-	while (s[i != '\0'] && s[maxL != '\0'])
+	while (i < maxL)
 	{
-		cache = *(p + maxL);
-		*(p + maxL) = *(p + i);
-		*(p + i) = cache;
+		cache = s[i];
+		s[i] = s[maxL];
+		s[i] = cache;
 		i++;
 		maxL--;
 	}
