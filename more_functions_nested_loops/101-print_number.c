@@ -12,7 +12,7 @@ void print_number(int n)
 {
 	int i;
 
-	if (n > 0)
+	if (n != 0)
 	{
 		for (i = 0; n != 0; i++)
 		{
