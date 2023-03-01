@@ -21,5 +21,7 @@ void rev_string(char *s)
 		cache = *(p + maxL);
 		*(p + maxL) = *(p + i);
 		*(p + i) = cache;
+		i++;
+		maxL--;
 	}
 }
