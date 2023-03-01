@@ -12,10 +12,10 @@
 void print_rev(char *s)
 {
 	int i;
-	int maxL = strlen(s) -1;
+	int maxL = strlen(s) - 1;
 
 	i = 0;
-	while (maxL > i)
+	while (maxL >= i)
 	{
 		_putchar(s[maxL]);
 		maxL--;
