@@ -2,23 +2,24 @@
 #include <string.h>
 #include "main.h"
 /**
- * print_rev - prints str inverted character-wise
+ * rev_string - prints str inverted character-wise
  *
  * Return: Empty
  */
 /**
  * @s: str to print
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i;
 	int maxL = strlen(s) - 1;
+	char *p = &*s;
 
 	i = 0;
-	while (maxL >= i)
+	while (i < maxL)
 	{
-		_putchar(s[maxL]);
+		*(p + i) = *(p + maxL);
+		i++;
 		maxL--;
 	}
-	_putchar('\n');
 }
