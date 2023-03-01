@@ -20,7 +20,7 @@ char *_strcpy(char *dest, char *src)
 	for (i = 0; i < len; i++)
 	{
 		tmp = src[i];
-		dest[i] = tmp;
+		dest[i] = tmp + '\0';
 	}
-	return (dest + '\0');
+	return (dest);
 }
