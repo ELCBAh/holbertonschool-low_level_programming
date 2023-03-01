@@ -8,3 +8,4 @@ void puts2(char *str);
 void _putchar(char c);
 void puts_half(char *str);
 void print_array(int *a, int n);
+char *_strcpy(char *dest, char *src);
