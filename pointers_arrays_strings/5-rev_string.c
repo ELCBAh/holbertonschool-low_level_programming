@@ -13,12 +13,6 @@ void rev_string(char *s)
 {
 	int i;
 	int maxL = strlen(s) - 1;
-	int cache;
+	
 
-	while (i < maxL)
-	{
-		
-		i++;
-		maxL--;
-	}
 }
