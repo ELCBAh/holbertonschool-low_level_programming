@@ -12,13 +12,14 @@
  */
 int _atoi(char *s)
 {
-	int i;
-	int len = strlen(s);
+	int i, val;
+	/*int len = strlen(s);*/
 	char tmp;
-	
-	for (i = 0; i < len; i++)
+
+	for (i = 0; i != '\0'; i++)
 	{
-		tmp = s[i];
+		val = atoi(s);
+		tmp = val;
 		*s = tmp;
 	}
 	return (0);
