@@ -15,19 +15,22 @@ int _atoi(char *s)
 	int i, val;
 	/*int len = strlen(s);*/
 	int tmp;
+	int *p = val;
 
 	for (i = 0; i != '\0'; i++)
 	{
 		val = atoi(s);
 		tmp = val;
 		*s = tmp;
-		if (atoi(s) < 0)
+		if (*s >= '0' && *s <= '9')
 		{
-			val = -val;
-			return (atoi(s));
+			if (atoi(s) < 0)
+			{
+				val = -val;
+			}
 		}
 		else
 			return (0);
 	}
-	return (atoi(s));
+	return (atoi(val));
 }
