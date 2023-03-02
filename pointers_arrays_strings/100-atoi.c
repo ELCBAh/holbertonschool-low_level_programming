@@ -13,10 +13,10 @@
 int _atoi(char *s)
 {
 	int i;
-	/*int len = strlen(s);*/
+	int len = strlen(s);
 	char tmp;
 	
-	for (i = 0; i != '\0'; i++)
+	for (i = 0; i < len; i++)
 	{
 		if (*s >= '0' && *s <= '9')
 			tmp = s[i];
