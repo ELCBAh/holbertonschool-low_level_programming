@@ -21,4 +21,5 @@ int _atoi(char *s)
 		tmp = s[i];
 		*s = tmp;
 	}
+	return (0);
 }
