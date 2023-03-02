@@ -18,8 +18,7 @@ int _atoi(char *s)
 	
 	for (i = 0; i < len; i++)
 	{
-		if (*s >= '0' && *s <= '9')
-			tmp = s[i];
+		tmp = s[i];
 		*s = tmp;
 	}
 }
