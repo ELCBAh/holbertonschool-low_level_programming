@@ -13,7 +13,7 @@
 int _atoi(char *s)
 {
 	int i;
-	int len = strlen(s);
+	/*int len = strlen(s);*/
 	char tmp;
 	
 	for (i = 0; i != '\0'; i++)
