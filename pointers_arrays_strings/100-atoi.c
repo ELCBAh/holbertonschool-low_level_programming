@@ -14,13 +14,20 @@ int _atoi(char *s)
 {
 	int i, val;
 	/*int len = strlen(s);*/
-	char tmp;
+	int tmp;
 
 	for (i = 0; i != '\0'; i++)
 	{
 		val = atoi(s);
 		tmp = val;
 		*s = tmp;
+		if (atoi(s) < 0)
+		{
+			val = -val;
+			return (atoi(s));
+		}
+		else
+			return (0);
 	}
-	return (0);
+	return (atoi(s));
 }
