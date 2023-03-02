@@ -20,8 +20,6 @@ int _atoi(char *s)
 	{
 		if (*s >= '0' && *s <= '9')
 			tmp = s[i];
-		else
-			continue;
 		*s = tmp;
 	}
 }
