@@ -1,21 +1,22 @@
 #include <string.h>
 #include "main.h"
 /**
- * _strncat - appends a string to another depending on bytes given
+ * _strncpy - copies a string to another depending on bytes given
  * Return: pointer to dest
  */
 /**
- * @dest: first string to append to
+ * @dest: first string to copy
  */
 /**
- * @src: last string to be appended
+ * @src: last string to be copied
  */
 /**
- * @n: bytes to limit append
+ * @n: bytes to limit copy
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int i, tmp;
+	int i;
+	char tmp;
 
 	for (i = 0; i <= n && i != '\0'; i++)
 	{
