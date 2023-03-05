@@ -19,8 +19,6 @@ char *leet(char *a)
 			a[i] = 52;
 			i++;
 		}
-		else
-			continue;
 		i++;
 	}
 	return (a);
