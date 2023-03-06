@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * memset - fills memory with a constant byte
+ * _memset - fills memory with a constant byte
  *
  * Return: s pointer
  */
