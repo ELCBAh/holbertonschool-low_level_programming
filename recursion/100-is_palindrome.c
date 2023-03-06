@@ -10,10 +10,10 @@ int is_palindrome(char *s)
 {
 	if (*s != '\n')
 	{
-		if (s == s + 1)
+		if (s == (s + 1))
 			return (1);
-		else
+		else if (s != (s + 1))
 			return (0);
 	}
-	return (0);
+	return (2);
 }
