@@ -13,17 +13,24 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, n;
+	int i = 0, n = 0, j, k = 0;
 	char *b1;
 
 	while (s1[i] != '\0')
 		i++;
-	for (n = 0; s2[n] != '\0'; n++, i++)
+	while (s2[n] != '\0')
+		n++;
+	b1 = malloc(sizeof(char) * (i + n + 1));
+	for (j = 0; j < i; j++)
 	{
-		if (s1[i] != '\0')
-			s1[i] = '\0';
-		s1[i] = s2[n];
+		b1[j] = s1[k];
+		k++;
 	}
-	b1 = malloc(sizeof(char) * i);
+	for (j = 0; j < n; j++)
+	{
+		b1[i] = s2[j];
+		i++;
+	}
+	b1[i + n] = '\0';
 	return (b1);
 }
