@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * argstostr - init prot
  * Description: concatenates all arguments
@@ -17,7 +18,7 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0)
 		return (NULL);
-	if (av == NULL)
+	if (*av == NULL)
 		return (NULL);
 	for (i = 1; i <= ac; i++)
 	{
@@ -26,7 +27,7 @@ char *argstostr(int ac, char **av)
 		{
 			tmp[i + 1] = '\n';
 		}
-		av[i] = tmp[i]
+		*av[i] = tmp[i];
 	}
-	return (av);
+	return (*av);
 }
