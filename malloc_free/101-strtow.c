@@ -1,7 +1,14 @@
 #include <string.h>
 #include <stdlib.h>
 #include "main.h"
-
+/**
+ * strtow - prot init
+ * Description: cuts string int words
+ * Return: pointer to new words
+ */
+/**
+ * @str: string to chop
+ */
 char **strtow(char *str)
 {
 	int i, len;
