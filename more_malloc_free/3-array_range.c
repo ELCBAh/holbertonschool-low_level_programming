@@ -1,6 +1,16 @@
 #include <stdlib.h>
 #include "main.h"
-
+/**
+ * array_range - init prot
+ * Description: Initializes an array considering min and max
+ * Return: pointer or NULL
+ */
+/**
+ * @min: minimum number to insert into array
+ */
+/**
+ * @max: max num
+ */
 int *array_range(int min, int max)
 {
 	int *b, i, size;
