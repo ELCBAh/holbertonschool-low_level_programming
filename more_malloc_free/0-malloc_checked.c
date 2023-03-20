@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
 /**
@@ -10,17 +11,24 @@
  */
 void *malloc_checked(unsigned int b)
 {
+	int *buff;
+
 	if (b == 0)
 	{
 		return (NULL);
 	}
 	else
 	{
-		int *buff = (int *)malloc(b);
+		buff = malloc(b);
 		if (buff == NULL)
+		{
 			return (NULL);
+			printf("%d", 98);
+		}
 		else
+		{
 			return (buff);
-		free (buff);
+			free(buff);
+		}
 	}
 }
