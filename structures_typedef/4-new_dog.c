@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include "dog.h"
-/** new_dog - initializing prototype
+/**
+ * new_dog - initializing prototype
  * @name: new dogs name
  * @age: new dogs age
  * @owner: new dogs owner
