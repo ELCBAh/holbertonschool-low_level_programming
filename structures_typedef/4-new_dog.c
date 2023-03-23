@@ -2,10 +2,17 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include "dog.h"
-
+/** new_dog - initializing prototype
+ * @name: new dogs name
+ * @age: new dogs age
+ * @owner: new dogs owner
+ * Description: creates a new dog based on a previous structure definition
+ * Return: pointer to new dog
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog = malloc(sizeof(dog_t));
+
 	if (new_dog == NULL)
 		return (NULL);
 	new_dog->name = malloc(strlen(name) + 1);
