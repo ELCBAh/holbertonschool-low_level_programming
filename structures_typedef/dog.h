@@ -20,3 +20,4 @@ void print_dog(struct dog *d);
 #define DOG_T
 typedef struct dog dog_t;
 #endif
+dog_t *new_dog(char *name, float age, char *owner);
