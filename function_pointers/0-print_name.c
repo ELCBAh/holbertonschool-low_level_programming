@@ -13,7 +13,11 @@ void print_name(char *name, void (*f)(char *n))
 	int i, len = strlen(name);
 	char *b;
 
+	if (f == NULL)
+		return;
 	b = malloc(len + 1);
+	if (b == NULL)
+		return;
 	for (i = 0; i < len; i++)
 		b[i] = name[i];
 	b[len + 1] = '\0';
