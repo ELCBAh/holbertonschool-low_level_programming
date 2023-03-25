@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (98);
 	}
-	if (!strchr("+-*/%", argv[2][0]))
+	if (strlen(argv[2]) != 1 || !strchr("+-*/%", argv[2][0]))
 	{
 		printf("Error\n");
 		return (99);
