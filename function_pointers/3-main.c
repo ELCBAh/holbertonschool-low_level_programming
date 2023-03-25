@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (99);
 	}
-	if (((atoi(argv[2]) == 47) || (atoi(argv[2]) == 38)) && (atoi(argv[3]) == 0))
+	if ((atoi(argv[2]) == 47) || (atoi(argv[2]) == 38) || (atoi(argv[3]) == 0))
 	{
 		printf("Error\n");
 		return (100);
