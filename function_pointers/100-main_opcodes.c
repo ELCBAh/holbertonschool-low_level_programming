@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * main - init main funct
@@ -16,13 +17,14 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
-	if (argv[1][0] == '-' || atoi(argv[1]) <= 0)
+	long num_bytes = strtol(argv[1], NULL, 10);
+	if (argv[1][0] == '-' || num_bytes <= 0)
 	{
 		printf("Error\n");
 		return (2);
 	}
 	ptr = (char *)main;
-	for (i = 0; i < atoi(argv[1]); i++)
+	for (i = 0; i < num_bytes; i++)
 		printf("%02hhx ", *(ptr + i));
 	printf("\n");
 	return (0);
