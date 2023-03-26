@@ -6,7 +6,7 @@
  * Description: prints assemply opcodes in two numbers hexadecimal
  * Return: Always 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	unsigned char *ptr;
 	int i;
