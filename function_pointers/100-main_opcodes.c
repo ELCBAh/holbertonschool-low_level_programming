@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 		printf("Error");
 		return (1);
 	}
-	if (atoi(argv[2] < 0))
+	if (atoi(argv[1] < 0))
 	{
 		printf("Error");
 		return (2);
