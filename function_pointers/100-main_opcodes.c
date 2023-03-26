@@ -11,15 +11,20 @@ int main(int argc, char *argv[])
 	unsigned char *ptr;
 	int i;
 
-	if (argc < 2 || sizeof(main) < atoi(argv[1]))
+	if (argc < 2)
 	{
-		printf("Error\n");
+		printf("Error1\n");
 		return (1);
 	}
 	if (atoi(argv[1]) <= 0)
 	{
-		printf("Error\n");
+		printf("Error2\n");
 		return (2);
+	}
+	if (sizeof(main) < atoi(argv[1]))
+	{
+		printf("Error\n");
+		return (1);
 	}
 	ptr = (unsigned char *)&main;
 	for (i = 0; i < atoi(argv[1]); i++)
