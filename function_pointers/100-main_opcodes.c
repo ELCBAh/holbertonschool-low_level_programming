@@ -16,15 +16,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	if (atoi(argv[1]) <= 0)
+	if (argv[1][0] == '-' || atoi(argv[1]) <= 0)
 	{
 		printf("Error\n");
 		return (2);
-	}
-	if (atoi(argv[1]) >= sizeof(main))
-	{
-		printf("Error\n");
-		return (1);
 	}
 	ptr = (unsigned char *)&main;
 	for (i = 0; i < atoi(argv[1]); i++)
