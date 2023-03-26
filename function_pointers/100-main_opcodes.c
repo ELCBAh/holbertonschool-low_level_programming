@@ -9,11 +9,9 @@
 int main(int argc, char *argv[])
 {
 	unsigned char *ptr;
-	int i, val, main_size;
+	int i;
 
-	val = atoi(argv[1]);
-	main_size = sizeof(main);
-	if (argc < 2 || main_size < val)
+	if (argc < 2 || sizeof(main) < atoi(argv[1]))
 	{
 		printf("Error\n");
 		return (1);
