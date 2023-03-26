@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (2);
 	}
-	ptr = (unsigned char *)&main;
+	ptr = (char *)main;
 	for (i = 0; i < atoi(argv[1]); i++)
 		printf("%02x ", *(ptr + i));
 	printf("\n");
