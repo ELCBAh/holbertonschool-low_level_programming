@@ -13,12 +13,12 @@ int main(int argc, char *argv[])
 
 	if (argc < 2)
 	{
-		printf("Error1\n");
+		printf("Error\n");
 		return (1);
 	}
 	if (atoi(argv[1]) <= 0)
 	{
-		printf("Error2\n");
+		printf("Error\n");
 		return (2);
 	}
 	if (sizeof(main) < atoi(argv[1]))
