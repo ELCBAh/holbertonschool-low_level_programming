@@ -18,7 +18,8 @@ int main(int argc, char **argv)
 		return (1);
 	}
 	long num_bytes = strtol(argv[1], NULL, 10);
-	if (argv[1][0] == '-' || num_bytes <= 0)
+
+	if (num_bytes <= 0)
 	{
 		printf("Error\n");
 		return (2);
