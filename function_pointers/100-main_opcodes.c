@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 	}
 	ptr = (char *)main;
 	for (i = 0; i < atoi(argv[1]); i++)
-		printf("%02x ", *(ptr + i));
+		printf("%02x", *(ptr + i));
 	printf("\n");
 	return (0);
 }
