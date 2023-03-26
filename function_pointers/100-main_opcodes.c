@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (2);
 	}
-	if (sizeof(main) < atoi(argv[1]))
+	if (atoi(argv[1]) >= sizeof(main))
 	{
 		printf("Error\n");
 		return (1);
