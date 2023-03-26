@@ -14,14 +14,14 @@ int main(int argc, char **argv)
 
 	if (argc < 2)
 	{
-		printf("Error\n");
+		fprintf(stderr, "Error\n");
 		exit(1);
 	}
 	long num_bytes = strtol(argv[1], NULL, 10);
 
 	if (num_bytes <= 0)
 	{
-		printf("Error\n");
+		fprintf(stderr, "Error\n");
 		exit(2);
 	}
 	ptr = (char *)main;
