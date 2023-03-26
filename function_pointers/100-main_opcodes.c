@@ -11,8 +11,16 @@ int main(int argc, char *argv[])
 	unsigned char *ptr;
 	int i;
 
-	if (argc < 2 || atoi(argv[2] < 0))
+	if (argc < 2)
+	{
+		prinft("Error");
 		return (1);
+	}
+	if (atoi(argv[2] < 0))
+	{
+		printf("Error");
+		return (2);
+	}
 	ptr = (unsigned char *)&main;
 	for (i = 0; i < atoi(argv[1]); i++)
 		printf("%02x ", *(ptr + 1));
