@@ -1,6 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdarg.h>
+#include "variadic_functions.h"
 /**
  * print_all - initializes prototype
  * @format: types of args passed
@@ -10,16 +11,19 @@
 void print_all(const char * const format, ...)
 {
 	va_list any;
-	const char *p = format;
+	const char *p = format, *chars = "icsf";
 
 	va_start(any, format);
+	(format == NULL) ? putchar('\n'), va_end(any), (void)0 : (void)0;
 	while (*p)
 	{
-		if (*p == '%')
+		if (strchr(chars, *p))
 		{
-			p++;
 			switch (*p)
 			{
+				case '\0':
+					printf("(nil)");
+					break;
 				case 'i':
 					printf("%d", va_arg(any, int));
 					break;
@@ -35,6 +39,8 @@ void print_all(const char * const format, ...)
 				default:
 					continue;
 			}
+			if (*p != '\0')
+				printf(", ");
 		}
 		p++;
 	}
