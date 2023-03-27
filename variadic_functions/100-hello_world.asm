@@ -7,7 +7,7 @@ section .text
 
 main:
 	mov eax, 4
-	mov ebx, 1
+	mov ebx, 2
 	mov ecx, message
 	mov edx, message_len
 	int 0x80
