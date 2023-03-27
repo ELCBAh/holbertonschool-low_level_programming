@@ -12,11 +12,12 @@ void print_all(const char * const format, ...)
 {
 	va_list any;
 	char *s;
-	const char *p = format, *chars = "icsf";
+	const char *p, *chars = "icsf";
 	int separator = 0;
 
-	va_start(any, format);
 	(format == NULL) ? putchar('\n'), va_end(any), (void)0 : (void)0;
+	va_start(any, format);
+	p = format;
 	while (*p)
 	{
 		if (strchr(chars, *p))
