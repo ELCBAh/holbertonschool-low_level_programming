@@ -11,6 +11,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list any;
+	char *s;
 	const char *p = format, *chars = "icsf";
 	int separator = 0;
 
@@ -31,7 +32,8 @@ void print_all(const char * const format, ...)
 					separator = 1;
 					break;
 				case 's':
-					printf("%s", va_arg(any, char *));
+					s = va_arg(any, char *);
+					printf("%s", (s != NULL ? s : "(nil)"));
 					separator = 1;
 					break;
 				case 'f':
@@ -41,8 +43,6 @@ void print_all(const char * const format, ...)
 				default:
 					continue;
 			}
-			if (p == NULL)
-				printf("(nil)");
 			(separator == 1 && *(p + 1) != '\0') ? printf(", ") : 0;
 			separator = 0;
 		}
