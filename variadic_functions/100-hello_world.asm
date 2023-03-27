@@ -11,6 +11,7 @@ main:
 	mov ecx, message
 	mov edx, message_len
 	int 0x80
-	xor eax, eax
-	mov ebx, 0
+	mov eax, 1
+	xor ebx, ebx
+	mov ecx, 2
 	int 0x80
