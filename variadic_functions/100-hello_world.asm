@@ -1,5 +1,5 @@
 section .data
-	message db 'Hello, world!', 10
+	message db 'Hello, world', 10
 	message_len equ $-message
 
 section .text
