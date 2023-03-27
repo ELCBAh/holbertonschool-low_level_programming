@@ -12,6 +12,7 @@ void print_all(const char * const format, ...)
 {
 	va_list any;
 	const char *p = format, *chars = "icsf";
+	int separator = 0;
 
 	va_start(any, format);
 	(format == NULL) ? putchar('\n'), va_end(any), (void)0 : (void)0;
@@ -21,26 +22,29 @@ void print_all(const char * const format, ...)
 		{
 			switch (*p)
 			{
-				case '\0':
-					printf("(nil)");
-					break;
 				case 'i':
 					printf("%d", va_arg(any, int));
+					separator = 1;
 					break;
 				case 'c':
 					printf("%c", va_arg(any, int));
+					separator = 1;
 					break;
 				case 's':
 					printf("%s", va_arg(any, char *));
+					separator = 1;
 					break;
 				case 'f':
 					printf("%f", va_arg(any, double));
+					separator = 1;
 					break;
 				default:
 					continue;
 			}
-			if (*p != '\0')
-				printf(", ");
+			if (p == NULL)
+				printf("(nil)");
+			(separator == 1 && *(p + 1) != '\0') ? printf(", ") : 0;
+			separator = 0;
 		}
 		p++;
 	}
