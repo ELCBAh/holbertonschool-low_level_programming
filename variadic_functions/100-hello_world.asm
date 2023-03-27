@@ -7,10 +7,10 @@ section .text
 
 main:
 	mov eax, 4
-	mov ebx, 2
+	mov ebx, 1
 	mov ecx, message
 	mov edx, message_len
 	int 0x80
-	mov eax, 1
-	xor ebx, ebx
+	xor eax, eax
+	mov ebx, 0
 	int 0x80
