@@ -7,14 +7,19 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i, b;
+	int i, bits, flagOne = 0;
 
-	for (i = 31; i >= 0; i--)
+	bits = sizeof(unsigned long int) * 8;
+	for (i = bits - 1; i >= 0; i--)
 	{
-		b = n >> i;
-		if (b & 1)
+		if (n & (1ul << i))
+		{
+			flagOne = 1;
 			_putchar('1');
-		else
+		}
+		else if (flagOne)
 			_putchar('0');
 	}
+	if (!flagOne)
+		_putchar('0');
 }
