@@ -4,7 +4,8 @@
  * @n: first number to check
  * @m: second number to check
  * Description: takes to numbers and checks bits to flip
- * Return: count of bits*/
+ * Return: count of bits
+ */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int diff;
