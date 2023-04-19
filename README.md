@@ -1,7 +1,7 @@
 ![low level programming logo](docs/low_level_programming.png "Low Level Programming")
 ===============================
 
-This is a school projects folder that moves around the C language and all it basic functionalities.
+This is a folder that contains school projects that move around the C language and all its basic functionalities.
 
 ---
 
