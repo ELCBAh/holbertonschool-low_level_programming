@@ -9,7 +9,7 @@ This is a school projects folder that moves around the C language and all it bas
 
 ---
 
-![Holberton School logo](docs/static_files/holbertonschoollogo.png "Holberton School")
+![Holberton School logo](docs/holbertonschoollogo.png "Holberton School")
 
 ---
 
