@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 #include "main.h"
 /**
  * print_number - defines prototype
@@ -18,8 +20,8 @@ void print_number(int n)
 		{
 			if (n < 0)
 				_putchar('-');
-			_putchar(n % 10 + '0');
-			n = n / 10;
+			_putchar(abs(n) % 10 + '0');
+			n = abs(n) / 10;
 		}
 	}
 	else
