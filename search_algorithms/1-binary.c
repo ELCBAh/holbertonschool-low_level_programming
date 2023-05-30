@@ -9,7 +9,19 @@
 */
 int binary_search(int *array, size_t size, int value)
 {
+	size_t i = 0, final = size - 1, media;
+
 	if (array == NULL)
 		return (-1);
+	while (i <= final)
+	{
+		media = floor((i + final) / 2);
+		if (array[media] < value)
+			i = media + 1;
+		else if (array[media] > value)
+			final = media - 1;
+		else
+			return (media);
+	}
 	return (-1);
 }
