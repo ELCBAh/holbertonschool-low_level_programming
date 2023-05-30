@@ -15,6 +15,14 @@ int binary_search(int *array, size_t size, int value)
 		return (-1);
 	while (i <= final)
 	{
+		printf("Searching in array: ");
+		for (media = i; media <= final; media++)
+		{
+			printf("%d", array[media]);
+			if (media != final)
+				printf(", ");
+		}
+		printf("\n");
 		media = floor((i + final) / 2);
 		if (array[media] < value)
 			i = media + 1;
